@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Georgia', serif;
+        }
+
+        .card-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #000;
+            overflow: auto;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            font-style: italic;
+            text-align: right;
+            margin-top: 40px;
+        }
+
+        @media print {
+            .content-container {
+                max-width: 100%;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Using a placeholder image since we can't embed the actual image -->
+        <div class="background-image" style="background-image: url('IMG_1706.jpg');"></div>
+        
+        <div class="content-container">
+            <h1>Happy Birthday to the most amazing man in my life!</h1>
+            
+            <p>Today is your special day, but in truth, every day with you feels like a gift to me. I feel so blessed to walk this journey of life by your side, and no matter how much time passes, my love for you only grows deeper.</p>
+            
+            <p>I want to start by saying how much I love you—more than words can ever express. You are my heart, my strength, and the reason I smile even on the toughest days. You have given me so much love, patience, and support, and I know that sometimes, I don't make things easy for you. I see the weight you carry, the sacrifices you make, and I know I've added to your burdens by not going to work. For that, I am truly sorry. It's not because I don't care or don't want to help; it's just that life has been a journey, and I'm still figuring things out. But please know that my heart is always with you, and I will never stop striving to be the best partner I can be for you.</p>
+            
+            <p>Through every challenge, every difficult moment, and every long day, you have been my constant source of strength. You work so hard to provide for us, to make sure we are happy and comfortable, and still, you find the time to love me unconditionally. I see your efforts, your exhaustion, and your silent sacrifices, and I want you to know that I don't take any of it for granted. You are not just an incredible husband; you are my hero, my protector, and my greatest blessing.</p>
+            
+            <p>No matter what, I want you to always remember that you are deeply loved. You are appreciated beyond measure, and there is nothing in this world that could ever change how much I adore you. You have given me a love that is pure, unwavering, and real, and I promise to always cherish and nurture it. I may not always have the right words to say or the perfect way to show it, but in my heart, you will always be my everything.</p>
+            
+            <p>On your birthday, I want to promise you this: I will continue to grow, to learn, and to find ways to make things easier for you. I will continue to love you with all that I am, to support you in every way I can, and to stand beside you through every twist and turn that life brings our way. You are my forever, and I am so grateful that I get to spend this life loving you.</p>
+            
+            <p class="signature">Happy Birthday, my love. May this year bring you all the happiness, success, and peace you deserve. I hope you know that today and every day, my heart beats only for you.</p>
+        </div>
+    </div>
+
+    <script>
+        // This script would normally load your image
+        // Since we can't embed your actual image, this is where you would add code to load it
+        document.addEventListener('DOMContentLoaded', function() {
+            // For a real implementation, you would replace this with your actual image path
+            // const imagePath = 'path/to/your/heart-collage.jpg';
+            // document.querySelector('.background-image').style.backgroundImage = `url(${imagePath})`;
+        });
+    </script>
+</body>
+</html>
